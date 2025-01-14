@@ -51,15 +51,17 @@
     <MakeDir Directories="$(SolutionDir)lib" />
   </Target>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.3.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Lib.Harmony.2.3.3\lib\net48\0Harmony.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\PathfinderModing\lib\Assembly-CSharp.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\0Harmony.dll</HintPath>
     </Reference>
-    <Reference Include="BlueprintCore, Version=2.8.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\WW-Blueprint-Core.2.8.0\lib\net472\BlueprintCore.dll</HintPath>
+    <Reference Include="Assembly-CSharp_publicized, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\publicized_assemblies\Assembly-CSharp_publicized.dll</HintPath>
+    </Reference>
+    <Reference Include="BlueprintCore, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\WW-Blueprint-Core.2.3.0\lib\net472\BlueprintCore.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -73,14 +75,14 @@
       <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Owlcat.Runtime.Core">
-      <HintPath>$(WrathPath)\Wrath_Data\Managed\Owlcat.Runtime.Core.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\Owlcat.Runtime.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Owlcat.Runtime.Validation">
       <HintPath>$(WrathPath)\Wrath_Data\Managed\Owlcat.Runtime.Validation.dll</HintPath>
     </Reference>
     <Reference Include="Owlcat.Runtime.Visual">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\Owlcat.Runtime.Visual.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\Owlcat.Runtime.Visual.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -102,8 +104,9 @@
     <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Json, Version=6.0.0.10, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Text.Json.6.0.10\lib\net461\System.Text.Json.dll</HintPath>
+    <Reference Include="System.Text.Json, Version=8.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\System.Text.Json.6.0.6\lib\net461\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
@@ -118,7 +121,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="TabletopTweaks-Core">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pathfinder Second Adventure\Mods\TabletopTweaks-Core\TabletopTweaks-Core.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Mods\TabletopTweaks-Core\TabletopTweaks-Core.dll</HintPath>
     </Reference>
     <Reference Include="UniRx, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -126,39 +129,42 @@
     </Reference>
     <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityModManager">
-      <HintPath>D:\Games\PathfinderModing\lib\UnityModManager.dll</HintPath>
+      <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\UnityModManager\UnityModManager.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

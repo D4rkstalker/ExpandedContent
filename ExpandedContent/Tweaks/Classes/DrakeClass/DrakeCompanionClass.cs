@@ -39,7 +39,7 @@ namespace ExpandedContent.Tweaks.Classes.DrakeClass {
 
         public static void AddDrakeCompanionClass() {
 
-            var BABMedium = Resources.GetBlueprint<BlueprintStatProgression>("4c936de4249b61e419a3fb775b9f2581");
+            var BABMedium = Resources.GetBlueprint<BlueprintStatProgression>("b3057560ffff3514299e8b93e7648a9d");
             var DragonType = Resources.GetBlueprint<BlueprintFeature>("455ac88e22f55804ab87c2467deff1d6");
             var SavesHigh = Resources.GetBlueprint<BlueprintStatProgression>("ff4662bde9e75f145853417313842751");
             var DruidClass = Resources.GetBlueprint<BlueprintCharacterClass>("610d836f3a3a9ed42a4349b62f002e96");
@@ -228,27 +228,6 @@ namespace ExpandedContent.Tweaks.Classes.DrakeClass {
                 });
                 bp.AddComponent<LockEquipmentSlot>(c => {
                     c.m_SlotType = LockEquipmentSlot.SlotType.Weapon8;
-                });
-                bp.AddComponent<LockEquipmentSlot>(c => {
-                    c.m_SlotType = LockEquipmentSlot.SlotType.Ring2;
-                });
-                bp.AddComponent<LockEquipmentSlot>(c => {
-                    c.m_SlotType = LockEquipmentSlot.SlotType.Glasses;
-                });
-                bp.AddComponent<LockEquipmentSlot>(c => {
-                    c.m_SlotType = LockEquipmentSlot.SlotType.Shirt;
-                });
-                bp.AddComponent<LockEquipmentSlot>(c => {
-                    c.m_SlotType = LockEquipmentSlot.SlotType.Gloves;
-                });
-                bp.AddComponent<LockEquipmentSlot>(c => {
-                    c.m_SlotType = LockEquipmentSlot.SlotType.Armor;
-                });
-                bp.AddComponent<LockEquipmentSlot>(c => {
-                    c.m_SlotType = LockEquipmentSlot.SlotType.Headgear;
-                });
-                bp.AddComponent<LockEquipmentSlot>(c => {
-                    c.m_SlotType = LockEquipmentSlot.SlotType.Cloak;
                 });
                 bp.m_AllowNonContextActions = false;
                 bp.HideInUI = true;
@@ -2533,11 +2512,6 @@ namespace ExpandedContent.Tweaks.Classes.DrakeClass {
                 });
                 bp.AddComponent<AddStatBonus>(c => {
                     c.Descriptor = ModifierDescriptor.Racial;
-                    c.Stat = StatType.Dexterity;
-                    c.Value = -2;
-                });
-                bp.AddComponent<AddStatBonus>(c => {
-                    c.Descriptor = ModifierDescriptor.Racial;
                     c.Stat = StatType.Constitution;
                     c.Value = 2;
                 });                
@@ -2583,11 +2557,6 @@ namespace ExpandedContent.Tweaks.Classes.DrakeClass {
                     c.Descriptor = ModifierDescriptor.Racial;
                     c.Stat = StatType.Strength;
                     c.Value = 4;
-                });
-                bp.AddComponent<AddStatBonus>(c => {
-                    c.Descriptor = ModifierDescriptor.Racial;
-                    c.Stat = StatType.Dexterity;
-                    c.Value = -2;
                 });
                 bp.AddComponent<AddStatBonus>(c => {
                     c.Descriptor = ModifierDescriptor.Racial;
@@ -2639,11 +2608,6 @@ namespace ExpandedContent.Tweaks.Classes.DrakeClass {
                 });
                 bp.AddComponent<AddStatBonus>(c => {
                     c.Descriptor = ModifierDescriptor.Racial;
-                    c.Stat = StatType.Dexterity;
-                    c.Value = -2;
-                });
-                bp.AddComponent<AddStatBonus>(c => {
-                    c.Descriptor = ModifierDescriptor.Racial;
                     c.Stat = StatType.Constitution;
                     c.Value = 2;
                 });                
@@ -2659,11 +2623,6 @@ namespace ExpandedContent.Tweaks.Classes.DrakeClass {
                     c.Descriptor = ModifierDescriptor.Racial;
                     c.Stat = StatType.Strength;
                     c.Value = 4;
-                });
-                bp.AddComponent<AddStatBonus>(c => {
-                    c.Descriptor = ModifierDescriptor.Racial;
-                    c.Stat = StatType.Dexterity;
-                    c.Value = -2;
                 });
                 bp.AddComponent<AddStatBonus>(c => {
                     c.Descriptor = ModifierDescriptor.Racial;
@@ -2934,7 +2893,9 @@ namespace ExpandedContent.Tweaks.Classes.DrakeClass {
             };
             DrakeCompanionClassProgression.LevelEntries = new LevelEntry[] {
                     Helpers.LevelEntry(1, DrakeVisionFeature, DrakeImmunitiesFeature, DrakeCompanionSlotFeature, DrakeSizeTinyFeature, DrakeCompanionMountLock1Feature, DrakeCompanionMountLock2Feature),///Subtype handled in DrakeCompanionSelection
-                    Helpers.LevelEntry(3, DrakeNaturalArmorFeature, DrakeNaturalArmor1, DrakePowersSelection),
+                    Helpers.LevelEntry(2,DrakePowersSelection),
+                    Helpers.LevelEntry(3, DrakeNaturalArmorFeature, DrakeNaturalArmor1),
+                    Helpers.LevelEntry(4,DrakePowersSelection),
                     Helpers.LevelEntry(5, DrakeSizeSmallFeature, DrakeNaturalArmor2),
                     Helpers.LevelEntry(6, DrakeNaturalArmorFeature, DrakeNaturalArmor3),
                     Helpers.LevelEntry(7, DrakePowersSelection),
