@@ -18,6 +18,7 @@ namespace ExpandedContent.Tweaks {
                 Miscellaneous.BullseyeShot.AddBullseyeShot();
                 Miscellaneous.PinpointTargeting.AddPinpointTargeting();
                 Miscellaneous.DemonHunter.AddDemonHunter();
+                Miscellaneous.NobleScion.AddNobleScion();
 
                 Classes.DrakeClass.DrakeCompanionClass.AddDrakeCompanionClass();
                 Classes.DrakeClass.DrakeCompanionGreen.AddDrakeCompanionGreen();
@@ -73,6 +74,7 @@ namespace ExpandedContent.Tweaks {
                 Archetypes.DivineTracker.AddDivineTracker();
                 Archetypes.PlantMaster.AddPlantMaster();
                 Archetypes.DrakeRider.AddDrakeRider();
+                Archetypes.SoldierOfGaia.AddSoldierOfGaia();
 
                 Archetypes.WaterDancer.AddWaterDancer();
 
@@ -151,6 +153,7 @@ namespace ExpandedContent.Tweaks {
                 Spells.BurstOfNettles.AddBurstOfNettles();
                 Spells.EruptivePustules.AddEruptivePustules();
                 Spells.TransmuteBloodToAcid.AddTransmuteBloodToAcid();
+                Spells.VerminShape.AddVerminShape();
 
                 Miscellaneous.AlchemistDiscoveries.MutagenDiscovery.AddMutagenDiscovery();
                 Miscellaneous.AlchemistDiscoveries.MindchemistSkillDiscovery.AddMindchemistSkillDiscovery();
@@ -195,6 +198,7 @@ namespace ExpandedContent.Tweaks {
                 Domains.LoyaltyDomain.AddLoyaltyDomain();
                 Domains.ArcaneDomain.AddArcaneDomain();
                 Domains.LightningDomain.AddLightningDomain();
+                Domains.InsectDomain.AddInsectDomain();
                 Domains.BaseDeityPatch.AddBaseDeityPatch();
 
                 Blessings.ArtificeBlessing.AddArtificeBlessing();
@@ -215,11 +219,16 @@ namespace ExpandedContent.Tweaks {
                 Mysteries.LunarMystery.AddLunarMystery();
                 Mysteries.ShadowMystery.AddShadowMystery();
                 Mysteries.DarkTapestryMystery.AddDarkTapestryMystery();
+                Mysteries.MetalMystery.AddMetalMystery();
 
                 Spirits.HeavensSpirit.AddHeavensSprit();
 
                 Curses.Vampirism.AddVampirismCurse();
                 Curses.DeepOne.AddDeepOneCurse();
+                Curses.Accursed.AddAccursedCurse();
+                Curses.GodMeddled.AddGodMeddledCurse();
+                Curses.Aboleth.AddAbolethCurse();
+                Curses.Lich.AddLichCurse();
 
                 Miscellaneous.AidAnother.AddAidAnother();
 
@@ -251,6 +260,8 @@ namespace ExpandedContent.Tweaks {
                 DemonLords.CythVsug.AddCythVsugFeature();
                 DemonLords.Jezelda.AddJezeldaFeature();
                 DemonLords.Shax.AddShaxFeature();
+                DemonLords.Abraxas.AddAbraxasFeature();
+                DemonLords.Aldinach.AddAldinachFeature();
 
                 Deities.Apsu.AddApsu();
                 Deities.Dahak.AddDahakFeature();
@@ -305,6 +316,7 @@ namespace ExpandedContent.Tweaks {
                 Deities.Groetus.AddGroetus();
                 Deities.Naderi.AddNaderiFeature();
                 Deities.Sivanah.AddSivanahFeature();
+                Deities.Ghlaunder.AddGhlaunderFeature();
                
                 Deities.PatchPulura.AddPulura();
                 Deities.Ragathiel.AddRagathielFeature();

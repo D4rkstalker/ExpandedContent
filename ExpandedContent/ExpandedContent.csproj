@@ -185,6 +185,7 @@
     <Compile Include="Tweaks\Archetypes\ChildOfAcavnaAndAmaznen.cs" />
     <Compile Include="Tweaks\Archetypes\DivineTracker.cs" />
     <Compile Include="Tweaks\Archetypes\PlantMaster.cs" />
+    <Compile Include="Tweaks\Archetypes\SoldierOfGaia.cs" />
     <Compile Include="Tweaks\Archetypes\Treesinger.cs" />
     <Compile Include="Tweaks\Archetypes\SwornOfTheEldest.cs" />
     <Compile Include="Tweaks\Archetypes\SkulkingHunter.cs" />
@@ -240,8 +241,11 @@
     <Compile Include="Tweaks\Components\AddImmunityToEnergyDrainFromFact.cs" />
     <Compile Include="Tweaks\Components\AddTargetAttackRollTriggerExpanded.cs" />
     <Compile Include="Tweaks\Components\AutoMetamagicMagicSourceOnly.cs" />
+    <Compile Include="Tweaks\Components\ContextActionCombatManeuverExpanded.cs" />
+    <Compile Include="Tweaks\Components\ContextActionOnApplyingSpell.cs" />
     <Compile Include="Tweaks\Components\ContextCalculateAbilityParamsBasedOnHigherClass.cs" />
     <Compile Include="Tweaks\Components\ContextConditionIsPetOwner.cs" />
+    <Compile Include="Tweaks\Components\DisableAllMoraleBonuses.cs" />
     <Compile Include="Tweaks\Components\IgnoreDamageReductionOnAttackRangeType.cs" />
     <Compile Include="Tweaks\Components\CheckWeaponEnchant.cs" />
     <Compile Include="Tweaks\Components\AbilityCasterOffHandWeaponCheck.cs" />
@@ -251,7 +255,9 @@
     <Compile Include="Tweaks\Components\ManeuverContextBonus.cs" />
     <Compile Include="Tweaks\Components\MaxCastingAttributeWithArchetypeGetter.cs" />
     <Compile Include="Tweaks\Components\LearnDomainSpell.cs" />
+    <Compile Include="Tweaks\Components\PrerequisiteCharacterIsFirstLevel.cs" />
     <Compile Include="Tweaks\Components\ReplaceAbilitiesStatFromArchetype.cs" />
+    <Compile Include="Tweaks\Components\SavingThrowBonusAgainstMagicSource.cs" />
     <Compile Include="Tweaks\Components\SpearParry.cs" />
     <Compile Include="Tweaks\Components\DeflectArrowsExpanded.cs" />
     <Compile Include="Tweaks\Components\ACBonusAgainstNotCaster.cs" />
@@ -262,8 +268,13 @@
     <Compile Include="Tweaks\Components\WeaponMultipleCategoriesContextAttackBonus.cs" />
     <Compile Include="Tweaks\Components\WeaponTypeContextDamageBonus.cs" />
     <Compile Include="Tweaks\ContentAdder.cs" />
+    <Compile Include="Tweaks\Curses\Aboleth.cs" />
+    <Compile Include="Tweaks\Curses\Accursed.cs" />
     <Compile Include="Tweaks\Curses\DeepOne.cs" />
+    <Compile Include="Tweaks\Curses\GodMeddled.cs" />
+    <Compile Include="Tweaks\Curses\Lich.cs" />
     <Compile Include="Tweaks\Curses\Vampirism.cs" />
+    <Compile Include="Tweaks\Deities\Ghlaunder.cs" />
     <Compile Include="Tweaks\Deities\Naderi.cs" />
     <Compile Include="Tweaks\Deities\Groetus.cs" />
     <Compile Include="Tweaks\Deities\Dretha.cs" />
@@ -351,6 +362,7 @@
     <Compile Include="Tweaks\Deities\Daikitsu.cs" />
     <Compile Include="Tweaks\Deities\Fumeiyoshi.cs" />
     <Compile Include="Tweaks\Deities\Wukong.cs" />
+    <Compile Include="Tweaks\DemonLords\Aldinach.cs" />
     <Compile Include="Tweaks\DemonLords\Areshkegal.cs" />
     <Compile Include="Tweaks\Deities\Arshea.cs" />
     <Compile Include="Tweaks\DemonLords\Baphomet.cs" />
@@ -381,6 +393,7 @@
     <Compile Include="Tweaks\Deities\Ragathiel.cs" />
     <Compile Include="Tweaks\DemonLords\Zura.cs" />
     <Compile Include="Tweaks\Domains\DomainProperties.cs" />
+    <Compile Include="Tweaks\Domains\InsectDomain.cs" />
     <Compile Include="Tweaks\Domains\LoyaltyDomain.cs" />
     <Compile Include="Tweaks\Domains\DefenseDomain.cs" />
     <Compile Include="Tweaks\Domains\HeroismDomain.cs" />
@@ -449,6 +462,7 @@
     <Compile Include="Tweaks\Miscellaneous\MountPatches\WolverineMountPatch.cs" />
     <Compile Include="Tweaks\Miscellaneous\NewActivatableAbilityGroups\NewActivatableAbilityGroupAdder.cs" />
     <Compile Include="Tweaks\Miscellaneous\NewActivatableAbilityGroups\UnitPartActivatableAbilityGroupEC.cs" />
+    <Compile Include="Tweaks\Miscellaneous\NobleScion.cs" />
     <Compile Include="Tweaks\Miscellaneous\Pinpoint Targeting.cs" />
     <Compile Include="Tweaks\Miscellaneous\BullseyeShot.cs" />
     <Compile Include="Tweaks\Miscellaneous\OpeningVolley.cs" />
@@ -481,6 +495,7 @@
     <Compile Include="Tweaks\Monitors\Ssilameshnik.cs" />
     <Compile Include="Tweaks\Monitors\Monad.cs" />
     <Compile Include="Tweaks\Mysteries\LunarMystery.cs" />
+    <Compile Include="Tweaks\Mysteries\MetalMystery.cs" />
     <Compile Include="Tweaks\Mysteries\MysteryProperties.cs" />
     <Compile Include="Tweaks\Mysteries\ShadowMystery.cs" />
     <Compile Include="Tweaks\Mysteries\DarkTapestryMystery.cs" />
@@ -528,6 +543,7 @@
     <Compile Include="Tweaks\Spells\KingsCastle.cs" />
     <Compile Include="Tweaks\Spells\Shambler.cs" />
     <Compile Include="Tweaks\Spells\TransmuteBloodToAcid.cs" />
+    <Compile Include="Tweaks\Spells\VerminShape.cs" />
     <Compile Include="Tweaks\Spells\WoodenPhalanx.cs" />
     <Compile Include="Tweaks\Spells\Shillelagh.cs" />
     <Compile Include="Tweaks\Spells\ShieldOfFortificationGreater.cs" />
@@ -650,6 +666,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Deities\Icon_Achaekek.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Deities\Icon_Aldinach.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Deities\Icon_Alseta.jpg">
@@ -821,6 +840,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Deities\Icon_Ghenshau.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Deities\Icon_Ghlaunder.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Deities\Icon_Godclaw.jpg">
@@ -1597,6 +1619,12 @@
     <Content Include="Assets\Potions\Form06_Yellow_Simple.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Skills\Icon_AbolethCurse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Skills\Icon_AccursedCurse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Skills\Icon_AidAnother.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1732,6 +1760,9 @@
     <Content Include="Assets\Skills\Icon_FeatSelection.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Skills\Icon_FishCurse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Skills\Icon_FormOfTheExoticDragon.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1745,6 +1776,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_GloomblindBolts.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Skills\Icon_GodMeddledCurse.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_Goodberry.jpg">
@@ -1769,6 +1803,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_InvokeDeity.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Skills\Icon_LichCurse.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_LightningRod.jpg">
@@ -1817,6 +1854,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_OracleLunarMystery.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Skills\Icon_OracleMetalMystery.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_OracleRevelationShellOfSuccor.jpg">
@@ -2075,6 +2115,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_VampireCurse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Skills\Icon_VerminShapeI.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_Vicious.png">

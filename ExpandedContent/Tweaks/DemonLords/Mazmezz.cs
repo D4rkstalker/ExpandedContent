@@ -39,7 +39,7 @@ namespace ExpandedContent.Tweaks.DemonLords {
                     "\nAlignment: Chaotic Evil   " +
                     "\nAreas of Concern: Bindings, Driders, Vermin   " +
                     "\nDomains: Animal, Chaos, Destruction, Evil   " +
-                    "\nSubdomains: Catastrophe, Demon, Rage, Venom   " +
+                    "\nSubdomains: Catastrophe, Demon, Insect, Rage, Venom   " +
                     "\nFavoured Weapon: Net (Kukri)   " +
                     "\nHoly Symbol: Skull in spiderweb   " +
                     "\nSacred Animal: Spider   " +
@@ -80,6 +80,7 @@ namespace ExpandedContent.Tweaks.DemonLords {
                     DeityTools.DomainAllowed.AnimalDomainAllowed,
                     DeityTools.DomainAllowed.DemonDomainEvilAllowed,
                     DeityTools.DomainAllowed.DemonDomainChaosAllowed,
+                    DeityTools.DomainAllowed.InsectDomainAllowed,
                     DeityTools.DomainAllowed.RageDomainAllowed,
                     DeityTools.SeparatistDomainAllowed.AirDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArtificeDomainAllowedSeparatist,

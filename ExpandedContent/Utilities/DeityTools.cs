@@ -72,6 +72,7 @@ namespace ExpandedContent.Utilities {
             public static BlueprintFeature FurDomainAllowed => Resources.GetModBlueprint<BlueprintFeature>("FurDomainAllowed");
             public static BlueprintFeature GrowthDomainAllowed => Resources.GetModBlueprint<BlueprintFeature>("GrowthDomainAllowed");
             public static BlueprintFeature HeroismDomainAllowed => Resources.GetModBlueprint<BlueprintFeature>("HeroismDomainAllowed");
+            public static BlueprintFeature InsectDomainAllowed => Resources.GetModBlueprint<BlueprintFeature>("InsectDomainAllowed");
             public static BlueprintFeature OldIceDomainAllowed => Resources.GetModBlueprint<BlueprintFeature>("IceDomainAllowed");
             public static BlueprintFeature LightningDomainAllowed => Resources.GetModBlueprint<BlueprintFeature>("LightningDomainAllowed");
             public static BlueprintFeature LoyaltyDomainAllowed => Resources.GetModBlueprint<BlueprintFeature>("LoyaltyDomainAllowed");
@@ -147,6 +148,7 @@ namespace ExpandedContent.Utilities {
             public static BlueprintFeature FurDomainAllowedSeparatist => Resources.GetModBlueprint<BlueprintFeature>("FurDomainAllowedSeparatist");
             public static BlueprintFeature GrowthDomainAllowedSeparatist => Resources.GetModBlueprint<BlueprintFeature>("GrowthDomainAllowedSeparatist");
             public static BlueprintFeature HeroismDomainAllowedSeparatist => Resources.GetModBlueprint<BlueprintFeature>("HeroismDomainAllowedSeparatist");
+            public static BlueprintFeature InsectDomainAllowedSeparatist => Resources.GetModBlueprint<BlueprintFeature>("InsectDomainAllowedSeparatist");
             //public static BlueprintFeature IceDomainAllowedSeparatist => Resources.GetModBlueprint<BlueprintFeature>("IceDomainAllowedSeparatist");
             public static BlueprintFeature LightningDomainAllowedSeparatist => Resources.GetModBlueprint<BlueprintFeature>("LightningDomainAllowedSeparatist");
             public static BlueprintFeature LoyaltyDomainAllowedSeparatist => Resources.GetModBlueprint<BlueprintFeature>("LoyaltyDomainAllowedSeparatist");
@@ -215,6 +217,15 @@ namespace ExpandedContent.Utilities {
                 c.HideInUI = true;
                 c.m_CharacterClass = WarpriestClass;
                 c.m_Archetype = NewMantisZealotArchetype;
+            });
+        }
+        public static void DisallowElderMythosCultist(this BlueprintFeature deity) {//For Homebrew Archetypes, only use if HA is detected
+            BlueprintCharacterClassReference ClericClass = Resources.GetBlueprintReference<BlueprintCharacterClassReference>("67819271767a9dd4fbfd4ae700befea0");
+            BlueprintArchetypeReference ElderMythosCultistArchetype = Resources.GetBlueprintReference<BlueprintArchetypeReference>("b7b9138f2e19b9f45a6ca457f6467710");
+            deity.AddComponent<PrerequisiteNoArchetype>(c => {
+                c.HideInUI = true;
+                c.m_CharacterClass = ClericClass;
+                c.m_Archetype = ElderMythosCultistArchetype;
             });
         }
         public static void AddSacredWeapon(this BlueprintFeature feature, WeaponCategory weapon) {

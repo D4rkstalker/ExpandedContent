@@ -81,6 +81,7 @@ New Feats
 - Bullseye Shot
 - Pinpoint Targeting
 - Demon Hunter
+- Noble Scion
 
 New Mythic Abilities
 
@@ -105,13 +106,18 @@ New Oracle Mysteries / Curses
   - Dragon
   - Heavens
   - Lunar
+  - Metal
   - Shadow
   - Succor
   - Winter
   - Wood
 
 - Curses: 
+  - Aboleth
+  - Accursed
   - Deep One
+  - God Meddled
+  - Lich
   - Vampirism
 
 
@@ -134,7 +140,7 @@ New Subdomains
 - Fur
 - Growth
 - Heroism
-- Ice
+- Insect
 - Lightning
 - Loyalty
 - Lust
@@ -212,6 +218,7 @@ New Spells
 - Burst of Nettles
 - Transmute Blood To Acid
 - Eruptive Pustules
+- Vermin Shape (I, II)
 
 
 Compatible with all mods as far as I am aware, extra features are unlocked if used with these mods

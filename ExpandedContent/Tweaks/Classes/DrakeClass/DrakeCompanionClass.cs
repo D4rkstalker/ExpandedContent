@@ -1945,7 +1945,7 @@ namespace ExpandedContent.Tweaks.Classes.DrakeClass {
                                                     Enhancement = 0,
                                                     EnhancementTotal = 0
                                                 },
-                                                Energy = DamageEnergyType.Fire
+                                                Energy = DamageEnergyType.NegativeEnergy
                                             },
                                             AbilityType = StatType.Unknown,
                                             EnergyDrainType = EnergyDrainType.Temporary,
