@@ -26,6 +26,7 @@ namespace ExpandedContent.Tweaks.Deities {
             LichDeityFeature.SetDisallowedArchetype(DreadKnightClass, ClawOfTheFalseWyrmArchetype);
             LichDeityFeature.SetDisallowedArchetype(InquistorClass, SwornOfTheEldestArchetype);
             LichDeityFeature.DisallowNewMantisZealot();
+            LichDeityFeature.DisallowSoldierOfGaia();
             LichDeityFeature.AddComponent<AddFacts>(c => {
                         c.m_Facts = new BlueprintUnitFactReference[] { LichDeityMythicFeature.ToReference<BlueprintUnitFactReference>() };
                     });
@@ -38,11 +39,16 @@ namespace ExpandedContent.Tweaks.Deities {
             LichDeityFeature.SetAllowedDomains(
                     DeityTools.DomainAllowed.OldUndeadDomainAllowed,
                     DeityTools.DomainAllowed.ArcaneDomainAllowed,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArchonDomainLawAllowedSeparatist,//Lawful
                     DeityTools.SeparatistDomainAllowed.BloodDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CavesDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CurseDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.LightningDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.InsanityDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DefenseDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DragonDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.FerocityDomainAllowedSeparatist,

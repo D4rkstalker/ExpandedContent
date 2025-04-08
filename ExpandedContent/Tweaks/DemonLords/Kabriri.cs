@@ -29,14 +29,20 @@ namespace ExpandedContent.Tweaks.DemonLords {
             KabririFeature.DisallowDarkSister();
             KabririFeature.DisallowNewMantisZealot();
             KabririFeature.MagicDeceiverLock();
+            KabririFeature.DisallowSoldierOfGaia();
 
             KabririFeature.SetAllowedDomains(
                     DeityTools.DomainAllowed.DemonDomainEvilAllowed,
                     DeityTools.DomainAllowed.DemonDomainChaosAllowed,
                     DeityTools.DomainAllowed.OldUndeadDomainAllowed,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.BloodDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CavesDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CurseDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.InsanityDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DefenseDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.LightningDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DragonDomainAllowedSeparatist,

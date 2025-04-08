@@ -72,6 +72,7 @@ namespace ExpandedContent.Tweaks.Deities {
                 bp.DisallowDarkSister();
                 bp.MagicDeceiverLock();
                 bp.DisallowNewMantisZealot();
+                bp.DisallowSoldierOfGaia();
 
 
                 bp.Groups = new FeatureGroup[] { FeatureGroup.Deities };
@@ -91,10 +92,15 @@ namespace ExpandedContent.Tweaks.Deities {
                     DeityTools.DomainAllowed.DefenseDomainAllowed,
                     DeityTools.DomainAllowed.DemonDomainEvilAllowed,
                     DeityTools.DomainAllowed.DemonDomainChaosAllowed,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.InsanityDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AirDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AnimalDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArtificeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CharmDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DarknessDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DeathDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DestructionDomainAllowedSeparatist,

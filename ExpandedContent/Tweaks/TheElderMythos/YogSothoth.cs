@@ -69,6 +69,7 @@ namespace ExpandedContent.Tweaks.TheElderMythos {
                 bp.DisallowProphetOfPestilence();
                 bp.MagicDeceiverLock();
                 bp.DisallowNewMantisZealot();
+                bp.DisallowSoldierOfGaia();
                 bp.Groups = new FeatureGroup[] { FeatureGroup.Deities };
                 bp.AddComponent<PrerequisiteAlignment>(c => {
                     c.Alignment = AlignmentMaskType.ChaoticGood | AlignmentMaskType.TrueNeutral | AlignmentMaskType.ChaoticNeutral | AlignmentMaskType.ChaoticEvil;
@@ -86,10 +87,15 @@ namespace ExpandedContent.Tweaks.TheElderMythos {
                     DeityTools.DomainAllowed.KnowledgeDomainAllowed,
                     DeityTools.DomainAllowed.TravelDomainAllowed,
                     DeityTools.DomainAllowed.StarsDomainAllowed,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArcaneDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.LightningDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AirDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AnimalDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.InsanityDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArtificeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CharmDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CommunityDomainAllowedSeparatist,

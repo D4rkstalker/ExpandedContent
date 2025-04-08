@@ -75,6 +75,7 @@ namespace ExpandedContent.Tweaks {
                 Archetypes.PlantMaster.AddPlantMaster();
                 Archetypes.DrakeRider.AddDrakeRider();
                 Archetypes.SoldierOfGaia.AddSoldierOfGaia();
+                Archetypes.FaithfulParagon.AddFaithfulParagon();
 
                 Archetypes.WaterDancer.AddWaterDancer();
 
@@ -154,11 +155,17 @@ namespace ExpandedContent.Tweaks {
                 Spells.EruptivePustules.AddEruptivePustules();
                 Spells.TransmuteBloodToAcid.AddTransmuteBloodToAcid();
                 Spells.VerminShape.AddVerminShape();
+                Spells.Detonate.AddDetonate();
+                Spells.IncendiaryCloud.AddIncendiaryCloud();
+                Spells.TrialOfFireAndAcid.AddTrialOfFireAndAcid();
+                Spells.CorrosiveConsumption.AddCorrosiveConsumption();
 
                 Miscellaneous.AlchemistDiscoveries.MutagenDiscovery.AddMutagenDiscovery();
                 Miscellaneous.AlchemistDiscoveries.MindchemistSkillDiscovery.AddMindchemistSkillDiscovery();
                 Miscellaneous.AlchemistDiscoveries.HealingTouchDiscovery.AddHealingTouchDiscovery();
                 Miscellaneous.AlchemistDiscoveries.PheromonesDiscovery.AddPheromonesDiccovery();
+
+                Archetypes.Beastmorph.AddBeastmorph();
 
                 Domains.DomainProperties.AddDomainProperties();
                 Domains.ImpossibleSubdomainSelection.AddImpossibleSubdomainSelection();
@@ -199,6 +206,11 @@ namespace ExpandedContent.Tweaks {
                 Domains.ArcaneDomain.AddArcaneDomain();
                 Domains.LightningDomain.AddLightningDomain();
                 Domains.InsectDomain.AddInsectDomain();
+                Domains.InsanityDomain.AddInsanityDomain();
+                Domains.DuelsDomain.AddDuelsDomain();
+                Domains.SmokeDomain.AddSmokeDomain();
+                Domains.AshDomain.AddAshDomain();
+                Domains.DivineDomain.AddDivineDomain();
                 Domains.BaseDeityPatch.AddBaseDeityPatch();
 
                 Blessings.ArtificeBlessing.AddArtificeBlessing();
@@ -220,8 +232,19 @@ namespace ExpandedContent.Tweaks {
                 Mysteries.ShadowMystery.AddShadowMystery();
                 Mysteries.DarkTapestryMystery.AddDarkTapestryMystery();
                 Mysteries.MetalMystery.AddMetalMystery();
+                Mysteries.ApocalypseMystery.AddApocalypseMystery();
 
                 Spirits.HeavensSpirit.AddHeavensSprit();
+                Spirits.SlumsSpirit.AddSlumsSprit();
+
+                Spirits.Hexes.BitingFrostHex.AddBitingFrostHex();
+                Spirits.Hexes.DeathlyBeingHex.AddDeathlyBeingHex();
+                Spirits.Hexes.EnchancedCuresHex.AddEnchancedCuresHex();
+                Spirits.Hexes.ErosionCurseHex.AddErosionCurseHex();
+                Spirits.Hexes.EyesOfBattleHex.AddEyesOfBattleHex();
+                Spirits.Hexes.SluggishHex.AddSluggishHex();
+                Spirits.Hexes.SparkingAuraHex.AddSparkingAuraHex();
+                Spirits.Hexes.WardOfStoneHex.AddWardOfStoneHex();
 
                 Curses.Vampirism.AddVampirismCurse();
                 Curses.DeepOne.AddDeepOneCurse();

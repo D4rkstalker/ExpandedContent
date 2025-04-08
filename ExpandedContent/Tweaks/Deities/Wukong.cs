@@ -63,6 +63,7 @@ namespace ExpandedContent.Tweaks.Deities {
                 bp.DisallowProphetOfPestilence();
                 bp.MagicDeceiverLock();
                 bp.DisallowNewMantisZealot();
+                bp.DisallowSoldierOfGaia();
                 bp.Groups = new FeatureGroup[] { FeatureGroup.Deities };
                 bp.AddComponent<PrerequisiteAlignment>(c => {
                     c.Alignment = AlignmentMaskType.ChaoticGood | AlignmentMaskType.TrueNeutral | AlignmentMaskType.ChaoticNeutral | AlignmentMaskType.ChaoticEvil;
@@ -81,9 +82,13 @@ namespace ExpandedContent.Tweaks.Deities {
                     DeityTools.DomainAllowed.TrickeryDomainAllowed,
                     DeityTools.DomainAllowed.ThieveryDomainAllowed,
                     DeityTools.DomainAllowed.RevolutionDomainAllowed,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AirDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArcaneDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArtificeDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.LightningDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CharmDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CommunityDomainAllowedSeparatist,
@@ -92,6 +97,7 @@ namespace ExpandedContent.Tweaks.Deities {
                     DeityTools.SeparatistDomainAllowed.DestructionDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.EarthDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.EvilDomainAllowedSeparatist,//Evil
+                    DeityTools.SeparatistDomainAllowed.InsanityDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.FireDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.GloryDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.GoodDomainAllowedSeparatist,//Good

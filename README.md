@@ -39,6 +39,10 @@ New Archetypes
 
 - Water Dancer, Monk
 
+- Soldier of Gaia, Faithful Paragon, Warpriest
+
+- Beastmorph, Alchemist
+
 New Prestige Class
 
 - Stargazer
@@ -48,7 +52,7 @@ New Classes
 - Oathbreaker - Based off the Vindictive Bastard fallen Paladin class. 
   - With Castigator archetype
   
-- DreadKnight - Based off the Antipaladin alternative class.
+- DreadKnight - Based off the Antipaladin alternative class. (Disabled by default)
   - With Conqueror and Claw of the False Wyrm archetypes
 
 New Features
@@ -102,6 +106,7 @@ Most of the deities from the tabletop game are included, split into categories b
 New Oracle Mysteries / Curses
 
 - Mysteries: 
+  - Apocalypse
   - Dark Tapestry
   - Dragon
   - Heavens
@@ -122,24 +127,44 @@ New Oracle Mysteries / Curses
 
 
 New Shaman Spirits
-
 - Heavens
+- Slums
 
+New Shaman Hexes
+- Accident
+- Bad Penny
+- Biting Frost
+- City Spirit
+- Deathly Being
+- Enhanced Cures
+- Erosion Curse
+- Eyes of Battle
+- Guiding Star
+- Lure of the Heavens
+- Shocking Aura
+- Sluggish
+- Starburn
+- Ward of Stone
+    
 New Subdomains
 - Agathion
 - Arcane
 - Archon
+- Ash
 - Blood
 - Caves
 - Curse
 - Defence
 - Demon
+- Divine
 - Dragon
+- Duels
 - Ferocity
 - Fist
 - Fur
 - Growth
 - Heroism
+- Insanity
 - Insect
 - Lightning
 - Loyalty
@@ -151,6 +176,7 @@ New Subdomains
 - Revelation
 - Revolution
 - Rivers
+- Smoke
 - Stars
 - Storm
 - Thievery
@@ -219,6 +245,10 @@ New Spells
 - Transmute Blood To Acid
 - Eruptive Pustules
 - Vermin Shape (I, II)
+- Detonate
+- Incendiary Cloud
+- Corrosive Consumption
+- Trial of Fire and Acid
 
 
 Compatible with all mods as far as I am aware, extra features are unlocked if used with these mods

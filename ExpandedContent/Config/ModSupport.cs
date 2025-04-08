@@ -31,6 +31,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using TabletopTweaks.Core.NewComponents;
+using TabletopTweaks.Core.NewComponents.OwlcatReplacements;
 using static Kingmaker.Kingdom.Buffs.KingdomTacticalArmyFeature;
 using static UnityModManagerNet.UnityModManager;
 
@@ -86,14 +87,19 @@ namespace ExpandedContent.Config {
                 //Soldier of Golarion spelllist patch
                 //This is done after other mods have loaded to also grab any spells they may add
                 var SoldierOfGaiaSpelllist = Resources.GetModBlueprint<BlueprintSpellList>("SoldierOfGaiaSpelllist");
-                SoldierOfGaiaSpelllist.SpellsByLevel[0].m_Spells = ClericSpelllist.SpellsByLevel[0].m_Spells;
-                SoldierOfGaiaSpelllist.SpellsByLevel[1].m_Spells = ClericSpelllist.SpellsByLevel[1].m_Spells;
-                SoldierOfGaiaSpelllist.SpellsByLevel[2].m_Spells = ClericSpelllist.SpellsByLevel[2].m_Spells;
-                SoldierOfGaiaSpelllist.SpellsByLevel[3].m_Spells = ClericSpelllist.SpellsByLevel[3].m_Spells;
-                SoldierOfGaiaSpelllist.SpellsByLevel[4].m_Spells = ClericSpelllist.SpellsByLevel[4].m_Spells;
-                SoldierOfGaiaSpelllist.SpellsByLevel[5].m_Spells = ClericSpelllist.SpellsByLevel[5].m_Spells;
-                SoldierOfGaiaSpelllist.SpellsByLevel[6].m_Spells = ClericSpelllist.SpellsByLevel[6].m_Spells;
+                SoldierOfGaiaSpelllist.SpellsByLevel[0].m_Spells = DruidSpelllist.SpellsByLevel[0].m_Spells;
+                SoldierOfGaiaSpelllist.SpellsByLevel[1].m_Spells = DruidSpelllist.SpellsByLevel[1].m_Spells;
+                SoldierOfGaiaSpelllist.SpellsByLevel[2].m_Spells = DruidSpelllist.SpellsByLevel[2].m_Spells;
+                SoldierOfGaiaSpelllist.SpellsByLevel[3].m_Spells = DruidSpelllist.SpellsByLevel[3].m_Spells;
+                SoldierOfGaiaSpelllist.SpellsByLevel[4].m_Spells = DruidSpelllist.SpellsByLevel[4].m_Spells;
+                SoldierOfGaiaSpelllist.SpellsByLevel[5].m_Spells = DruidSpelllist.SpellsByLevel[5].m_Spells;
+                SoldierOfGaiaSpelllist.SpellsByLevel[6].m_Spells = DruidSpelllist.SpellsByLevel[6].m_Spells;
 
+                //Faithful Paragon spelllist patch
+                //This is done after other mods have loaded to also grab any spells they may add
+                var FaithfulParagonSpelllist = Resources.GetModBlueprint<BlueprintSpellList>("FaithfulParagonSpelllist");
+                var PaladinSpelllist = Resources.GetBlueprint<BlueprintSpellList>("9f5be2f7ea64fe04eb40878347b147bc");
+                SpellWithDesriptorAdders.FaithfulParagonSpellAdder(ClericSpelllist, PaladinSpelllist, FaithfulParagonSpelllist);
 
 
 
@@ -892,6 +898,51 @@ namespace ExpandedContent.Config {
                             "\nDomain {g|Encyclopedia:Spell}Spells{/g}: magic missile, {g|SpellsResistEnergy}resist energy{/g}, {g|SpellsDispelMagic}dispel magic{/g}, arcane concordance, " +
                             "{g|SpellsSpellResistance}spell resistance{/g}, {g|SpellsGreaterDispelMagic}dispel magic, greater{/g}, {g|SpellsPowerWordBlind}power word blind{/g}, " +
                             "{g|SpellsProtectionFromSpells}protection from spells{/g}, mages disjunction.");
+                    }
+                    Main.Log("Done");
+                    #endregion
+                    #region Monk AC Stacking
+                    Main.Log("Patching Monk AC Stacking with TTT");
+                    var ScaledFistACBonusBuffSuppressBuffsTTT = Resources.GetBlueprint<BlueprintBuff>("64acb179cc6a4f19bb3513d094b28d02").GetComponent<SuppressBuffsTTT>();
+                    var OracleRevelationPropheticArmorBuff = Resources.GetModBlueprint<BlueprintBuff>("OracleRevelationPropheticArmorBuff");
+                    if (ScaledFistACBonusBuffSuppressBuffsTTT != null) {
+                        ScaledFistACBonusBuffSuppressBuffsTTT.m_Buffs = ScaledFistACBonusBuffSuppressBuffsTTT.m_Buffs
+                            .AppendToArray(OracleRevelationPropheticArmorBuff.ToReference<BlueprintBuffReference>());
+                    }
+                    Main.Log("Done");
+                    #endregion
+                    #region Loremaster Spellbooks
+                    Main.Log("Patching TTT Loremaster Spellbooks");
+                    var LoremasterRavenerHunterProgression = Resources.GetModBlueprint<BlueprintProgression>("LoremasterRavenerHunterProgression");
+                    var LoremasterSwornOfTheEldestProgression = Resources.GetModBlueprint<BlueprintProgression>("LoremasterSwornOfTheEldestProgression");
+                    var LoremasterSoldierOfGaiaProgression = Resources.GetModBlueprint<BlueprintProgression>("LoremasterSoldierOfGaiaProgression");
+                    var LoremasterFaithfulParagonProgression = Resources.GetModBlueprint<BlueprintProgression>("LoremasterFaithfulParagonProgression");
+                    var LoremasterSkulkingHunterProgression = Resources.GetModBlueprint<BlueprintProgression>("LoremasterSkulkingHunterProgression");
+                    var LoremasterSilverChampionProgression = Resources.GetModBlueprint<BlueprintProgression>("LoremasterSilverChampionProgression");
+                    var LoremasterDreadKnightProgression = Resources.GetModBlueprint<BlueprintProgression>("LoremasterDreadKnightProgression");
+                    var LoremasterClawOfTheFalseWyrmProgression = Resources.GetModBlueprint<BlueprintProgression>("LoremasterClawOfTheFalseWyrmProgression");
+                    var LoremasterSpellbookSelectionTTT = Resources.GetBlueprint<BlueprintFeatureSelection>("af469dfbc8c3424ab2eba33b754c3077");
+                    if (LoremasterSpellbookSelectionTTT != null) {
+                        LoremasterSpellbookSelectionTTT.m_AllFeatures = LoremasterSpellbookSelectionTTT.m_AllFeatures.AppendToArray(
+                            LoremasterRavenerHunterProgression.ToReference<BlueprintFeatureReference>(),
+                            LoremasterSwornOfTheEldestProgression.ToReference<BlueprintFeatureReference>(),
+                            LoremasterSoldierOfGaiaProgression.ToReference<BlueprintFeatureReference>(),
+                            LoremasterFaithfulParagonProgression.ToReference<BlueprintFeatureReference>(),
+                            LoremasterSkulkingHunterProgression.ToReference<BlueprintFeatureReference>(),
+                            LoremasterSilverChampionProgression.ToReference<BlueprintFeatureReference>(),
+                            LoremasterDreadKnightProgression.ToReference<BlueprintFeatureReference>(),
+                            LoremasterClawOfTheFalseWyrmProgression.ToReference<BlueprintFeatureReference>()
+                            );
+                    }
+                    Main.Log("Done");
+                    #endregion
+                    #region Extra Revelation feat insert
+                    Main.Log("Adding new revelations to the Extra Revelation feat");
+                    var ExtraRevelationFeatTTT = Resources.GetBlueprint<BlueprintFeatureSelection>("0a68ce40e26d4b769d450586a4996b23");
+                    var OracleRevelationSelectionRevelations = Resources.GetBlueprint<BlueprintFeatureSelection>("60008a10ad7ad6543b1f63016741a5d2");                    
+                    if (ExtraRevelationFeatTTT != null) {
+                        ExtraRevelationFeatTTT.m_Features = OracleRevelationSelectionRevelations.m_Features.ToArray();
+                        ExtraRevelationFeatTTT.m_AllFeatures = OracleRevelationSelectionRevelations.m_AllFeatures.ToArray();
                     }
                     Main.Log("Done");
                     #endregion

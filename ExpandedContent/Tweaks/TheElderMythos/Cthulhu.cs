@@ -69,6 +69,7 @@ namespace ExpandedContent.Tweaks.TheElderMythos {
                 bp.DisallowDarkSister();
                 bp.MagicDeceiverLock();
                 bp.DisallowNewMantisZealot();
+                bp.DisallowSoldierOfGaia();
 
                 bp.Groups = new FeatureGroup[] { FeatureGroup.Deities };
                 bp.AddComponent<PrerequisiteAlignment>(c => {
@@ -85,6 +86,11 @@ namespace ExpandedContent.Tweaks.TheElderMythos {
                     DeityTools.DomainAllowed.EvilDomainAllowed,
                     DeityTools.DomainAllowed.MadnessDomainAllowed,
                     DeityTools.DomainAllowed.StarsDomainAllowed,
+                    DeityTools.DomainAllowed.InsanityDomainAllowed,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArcaneDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AirDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.LightningDomainAllowedSeparatist,

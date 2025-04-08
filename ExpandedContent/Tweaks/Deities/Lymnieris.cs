@@ -65,6 +65,7 @@ namespace ExpandedContent.Tweaks.Deities {
                 bp.DisallowProphetOfPestilence();
                 bp.MagicDeceiverLock();
                 bp.DisallowNewMantisZealot();
+                bp.DisallowSoldierOfGaia();
                 bp.Groups = new FeatureGroup[] { FeatureGroup.Deities };
                 bp.AddComponent<PrerequisiteAlignment>(c => {
                     c.Alignment = AlignmentMaskType.LawfulGood | AlignmentMaskType.NeutralGood | AlignmentMaskType.LawfulNeutral;
@@ -82,6 +83,10 @@ namespace ExpandedContent.Tweaks.Deities {
                     DeityTools.DomainAllowed.ArchonDomainGoodAllowed,
                     DeityTools.DomainAllowed.ArchonDomainLawAllowed,
                     DeityTools.DomainAllowed.LustDomainAllowed,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.InsanityDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AirDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AnimalDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArtificeDomainAllowedSeparatist,
@@ -102,6 +107,7 @@ namespace ExpandedContent.Tweaks.Deities {
                     DeityTools.SeparatistDomainAllowed.MadnessDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.MagicDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.NobilityDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.PlantDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ReposeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.RuneDomainAllowedSeparatist,

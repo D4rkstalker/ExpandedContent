@@ -53,13 +53,18 @@ namespace ExpandedContent.Tweaks.Deities {
             });
             PuluraFeature.SetAllowedDomains(
                     DeityTools.DomainAllowed.StarsDomainAllowed,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AgathionDomainAllowedSeparatist,//Good
                     DeityTools.SeparatistDomainAllowed.ArchonDomainGoodAllowedSeparatist,//Good
                     DeityTools.SeparatistDomainAllowed.BloodDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CavesDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArcaneDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CurseDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.InsanityDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DefenseDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DemonDomainChaosAllowedSeparatist,//Chaos
                     DeityTools.SeparatistDomainAllowed.InsectDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DragonDomainAllowedSeparatist,

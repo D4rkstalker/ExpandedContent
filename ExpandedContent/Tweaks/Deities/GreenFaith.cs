@@ -48,12 +48,17 @@ namespace ExpandedContent.Tweaks.Deities {
             //GreenFaithFeature.m_Icon = GreenFaithIcon;
             GreenFaithFeature.m_Icon = GreenFaithFeature.Icon;
             GreenFaithFeature.SetAllowedDomains(
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AgathionDomainAllowedSeparatist,//Good
                     DeityTools.SeparatistDomainAllowed.ArchonDomainGoodAllowedSeparatist,//Good
                     DeityTools.SeparatistDomainAllowed.ArchonDomainLawAllowedSeparatist,//Lawful
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.BloodDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.InsanityDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CavesDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CurseDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DefenseDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DemonDomainChaosAllowedSeparatist,//Chaos
                     DeityTools.SeparatistDomainAllowed.DemonDomainEvilAllowedSeparatist,//Evil

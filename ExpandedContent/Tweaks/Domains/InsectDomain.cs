@@ -26,7 +26,7 @@ using Kingmaker.ResourceLinks;
 using Kingmaker.UnitLogic.Mechanics.Properties;
 
 namespace ExpandedContent.Tweaks.Domains {
-    internal class InsectDomain {//WIP!!!!!!!!!!!!!!!!!!!!!!!!
+    internal class InsectDomain {
 
         public static void AddInsectDomain() {
 
@@ -674,7 +674,9 @@ namespace ExpandedContent.Tweaks.Domains {
                     c.m_Stat = StatType.Unknown;
                     c.m_SpecificModifier = ModifierDescriptor.None;
                     c.m_Progression = ContextRankProgression.OnePlusDivStep;
-                    c.m_StartLevel = 0;
+                    c.m_UseMin = true;
+                    c.m_Min = 1;
+                    c.m_StartLevel = -2;
                     c.m_StepLevel = 5;
                     c.m_CustomProperty = SeparatistWithDruidAsIsProperty.ToReference<BlueprintUnitPropertyReference>();
                 });

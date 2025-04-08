@@ -179,8 +179,10 @@
     <Compile Include="Tweaks\Archdevils\Mammon.cs" />
     <Compile Include="Tweaks\Archdevils\Mephistopheles.cs" />
     <Compile Include="Tweaks\Archdevils\Moloch.cs" />
+    <Compile Include="Tweaks\Archetypes\Beastmorph.cs" />
     <Compile Include="Tweaks\Archetypes\DrakeRider.cs" />
     <Compile Include="Tweaks\Archetypes\DivineScourge.cs" />
+    <Compile Include="Tweaks\Archetypes\FaithfulParagon.cs" />
     <Compile Include="Tweaks\Archetypes\Mindchemist.cs" />
     <Compile Include="Tweaks\Archetypes\ChildOfAcavnaAndAmaznen.cs" />
     <Compile Include="Tweaks\Archetypes\DivineTracker.cs" />
@@ -238,7 +240,11 @@
     <Compile Include="Tweaks\Classes\DrakeClass\DrakeCompanionSelection.cs" />
     <Compile Include="Tweaks\Classes\Oathbreaker.cs" />
     <Compile Include="Tweaks\Classes\DreadKnight.cs" />
+    <Compile Include="Tweaks\Components\AddBuffInTerrain.cs" />
+    <Compile Include="Tweaks\Components\AddContextStatBonusInTerrain.cs" />
+    <Compile Include="Tweaks\Components\AddExtraDrainToEnergyDrainInstance.cs" />
     <Compile Include="Tweaks\Components\AddImmunityToEnergyDrainFromFact.cs" />
+    <Compile Include="Tweaks\Components\AddInitiatorSavingThrowTriggerExpanded.cs" />
     <Compile Include="Tweaks\Components\AddTargetAttackRollTriggerExpanded.cs" />
     <Compile Include="Tweaks\Components\AutoMetamagicMagicSourceOnly.cs" />
     <Compile Include="Tweaks\Components\ContextActionCombatManeuverExpanded.cs" />
@@ -258,6 +264,7 @@
     <Compile Include="Tweaks\Components\PrerequisiteCharacterIsFirstLevel.cs" />
     <Compile Include="Tweaks\Components\ReplaceAbilitiesStatFromArchetype.cs" />
     <Compile Include="Tweaks\Components\SavingThrowBonusAgainstMagicSource.cs" />
+    <Compile Include="Tweaks\Components\SavingThrowContextBonusAgainstSpecificSpells.cs" />
     <Compile Include="Tweaks\Components\SpearParry.cs" />
     <Compile Include="Tweaks\Components\DeflectArrowsExpanded.cs" />
     <Compile Include="Tweaks\Components\ACBonusAgainstNotCaster.cs" />
@@ -392,7 +399,11 @@
     <Compile Include="Tweaks\Deities\Pulura.cs" />
     <Compile Include="Tweaks\Deities\Ragathiel.cs" />
     <Compile Include="Tweaks\DemonLords\Zura.cs" />
+    <Compile Include="Tweaks\Domains\AshDomain.cs" />
+    <Compile Include="Tweaks\Domains\DivineDomain.cs" />
     <Compile Include="Tweaks\Domains\DomainProperties.cs" />
+    <Compile Include="Tweaks\Domains\DuelsDomain.cs" />
+    <Compile Include="Tweaks\Domains\InsanityDomain.cs" />
     <Compile Include="Tweaks\Domains\InsectDomain.cs" />
     <Compile Include="Tweaks\Domains\LoyaltyDomain.cs" />
     <Compile Include="Tweaks\Domains\DefenseDomain.cs" />
@@ -403,6 +414,7 @@
     <Compile Include="Tweaks\Domains\PlantDomainPatch.cs" />
     <Compile Include="Tweaks\Domains\ResolveDomain.cs" />
     <Compile Include="Tweaks\Domains\CurseDomain.cs" />
+    <Compile Include="Tweaks\Domains\SmokeDomain.cs" />
     <Compile Include="Tweaks\Domains\StarsDomain.cs" />
     <Compile Include="Tweaks\Domains\RestorationDomain.cs" />
     <Compile Include="Tweaks\Domains\ImpossibleSubdomainSelection.cs" />
@@ -494,6 +506,7 @@
     <Compile Include="Tweaks\Monitors\Kerkamoth.cs" />
     <Compile Include="Tweaks\Monitors\Ssilameshnik.cs" />
     <Compile Include="Tweaks\Monitors\Monad.cs" />
+    <Compile Include="Tweaks\Mysteries\ApocalypseMystery.cs" />
     <Compile Include="Tweaks\Mysteries\LunarMystery.cs" />
     <Compile Include="Tweaks\Mysteries\MetalMystery.cs" />
     <Compile Include="Tweaks\Mysteries\MysteryProperties.cs" />
@@ -524,13 +537,16 @@
     <Compile Include="Resources.cs" />
     <Compile Include="SaveGamePatch.cs" />
     <Compile Include="Tweaks\Spells\BurstOfNettles.cs" />
+    <Compile Include="Tweaks\Spells\CorrosiveConsumption.cs" />
     <Compile Include="Tweaks\Spells\DanceOfAThousandCuts.cs" />
     <Compile Include="Tweaks\Spells\DanceOfAHundredCuts.cs" />
     <Compile Include="Tweaks\Spells\ClaySkin.cs" />
     <Compile Include="Tweaks\Spells\BloodMist.cs" />
+    <Compile Include="Tweaks\Spells\Detonate.cs" />
     <Compile Include="Tweaks\Spells\DustOfTwilight.cs" />
     <Compile Include="Tweaks\Spells\ArcaneConcordance.cs" />
     <Compile Include="Tweaks\Spells\EruptivePustules.cs" />
+    <Compile Include="Tweaks\Spells\IncendiaryCloud.cs" />
     <Compile Include="Tweaks\Spells\MydriaticSpontaneityMass.cs" />
     <Compile Include="Tweaks\Spells\MydriaticSpontaneity.cs" />
     <Compile Include="Tweaks\Spells\ShadowClaws.cs" />
@@ -543,6 +559,7 @@
     <Compile Include="Tweaks\Spells\KingsCastle.cs" />
     <Compile Include="Tweaks\Spells\Shambler.cs" />
     <Compile Include="Tweaks\Spells\TransmuteBloodToAcid.cs" />
+    <Compile Include="Tweaks\Spells\TrialOfFireAndAcid.cs" />
     <Compile Include="Tweaks\Spells\VerminShape.cs" />
     <Compile Include="Tweaks\Spells\WoodenPhalanx.cs" />
     <Compile Include="Tweaks\Spells\Shillelagh.cs" />
@@ -571,6 +588,15 @@
     <Compile Include="Tweaks\Spells\Slipstream.cs" />
     <Compile Include="Tweaks\Spells\HydraulicPush.cs" />
     <Compile Include="Tweaks\Spirits\HeavensSpirit.cs" />
+    <Compile Include="Tweaks\Spirits\Hexes\BitingFrostHex.cs" />
+    <Compile Include="Tweaks\Spirits\Hexes\DeathlyBeingHex.cs" />
+    <Compile Include="Tweaks\Spirits\Hexes\EnhancedCuresHex.cs" />
+    <Compile Include="Tweaks\Spirits\Hexes\ErosionCurseHex.cs" />
+    <Compile Include="Tweaks\Spirits\Hexes\EyesOfBattleHex.cs" />
+    <Compile Include="Tweaks\Spirits\Hexes\SluggishHex.cs" />
+    <Compile Include="Tweaks\Spirits\Hexes\SparkingAuraHex.cs" />
+    <Compile Include="Tweaks\Spirits\Hexes\WardOfStoneHex.cs" />
+    <Compile Include="Tweaks\Spirits\SlumsSpirit.cs" />
     <Compile Include="Tweaks\TheElderMythos\Abhoth.cs" />
     <Compile Include="Tweaks\TheElderMythos\AtlachNacha.cs" />
     <Compile Include="Tweaks\TheElderMythos\Azathoth.cs" />
@@ -1265,6 +1291,9 @@
     <Content Include="Assets\Items\Icon_ScrollOfClaySkin.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Items\Icon_ScrollOfCorrosiveConsumption.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Items\Icon_ScrollOfDanceOfAThousandCuts.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1344,6 +1373,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Items\Icon_ScrollOfTransmuteBloodToAcid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Items\Icon_ScrollOfTrialOfFireAndAcid.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Items\Icon_ScrollOfWallOfFire.png">
@@ -1619,6 +1651,9 @@
     <Content Include="Assets\Potions\Form06_Yellow_Simple.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Skills\Icon_DivineVessel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Skills\Icon_AbolethCurse.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1664,6 +1699,9 @@
     <Content Include="Assets\Skills\Icon_AuraEvil.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Skills\Icon_BadPenny.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Skills\Icon_BearShamanTotemTransformation.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1688,6 +1726,9 @@
     <Content Include="Assets\Skills\Icon_ClaySkin.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Skills\Icon_CloudOfSmoke.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Skills\Icon_Command.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1701,6 +1742,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_CommunityRangedNormal.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Skills\Icon_CorrosiveConsumption.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_Counter.png">
@@ -1796,6 +1840,9 @@
     <Content Include="Assets\Skills\Icon_HypnoticPattern.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Skills\Icon_IncendiaryCloud.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Skills\Icon_InflictPain.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1842,6 +1889,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_OD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Skills\Icon_OracleApocalypseMystery.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Skills\Icon_OracleDarkTapestryMystery.png">
@@ -2108,6 +2158,9 @@
     <Content Include="Assets\Skills\Icon_TransmuteBloodToAcid.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Skills\Icon_TrialOfFireAndAcid.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Skills\Icon_Trip.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -2154,7 +2207,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Tweaks\Miscellaneous\DumbStuff\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>(robocopy "$(TargetDir) " "%WrathPath%\Mods\ExpandedContent\ " /s /e )^&amp; IF %25ERRORLEVEL%25 LEQ 1 exit 0</PostBuildEvent>

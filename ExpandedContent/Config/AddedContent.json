@@ -75,9 +75,9 @@
         "Description": "Adds a modified version of the Vindictive Bastard archetype as a full class."
       },
       "Dread Knight": {
-        "Enabled": true,
-        "Homebrew": false,
-        "Description": "Adds the Antipaladin as a class, renamed and modified slightly to fit the campaign setting."
+        "Enabled": false,
+        "Homebrew": true,
+        "Description": "Adds the Antipaladin as a class, renamed and modified slightly to fit the campaign setting. For a true Antipaladin, please download the Microscopic Content Expansion mod."
       },
       "Stargazer": {
         "Enabled": true,
@@ -234,6 +234,16 @@
         "Enabled": true,
         "Homebrew": false,
         "Description": "A warpriest archetype that uses druid spells."
+      },
+      "Beastmorph": {
+        "Enabled": true,
+        "Homebrew": false,
+        "Description": "A alchemist archetype that uses mutagens to gain animalistic abilities."
+      },
+      "Faithful Paragon": {
+        "Enabled": true,
+        "Homebrew": false,
+        "Description": "A warpriest archetype that focuses on defence."
       }
     },
     "IsExpanded": false
@@ -405,6 +415,31 @@
         "Enabled": true,
         "Homebrew": false,
         "Description": "Adds the insect subdomain, a subdomain to the animal domain."
+      },
+      "Insanity Subdomain": {
+        "Enabled": true,
+        "Homebrew": false,
+        "Description": "Adds the insanity subdomain, a subdomain to the madness domain."
+      },
+      "Duels Subdomain": {
+        "Enabled": true,
+        "Homebrew": false,
+        "Description": "Adds the duels subdomain, a subdomain to the war domain."
+      },
+      "Smoke Subdomain": {
+        "Enabled": true,
+        "Homebrew": false,
+        "Description": "Adds the smoke subdomain, a subdomain to the fire domain."
+      },
+      "Ash Subdomain": {
+        "Enabled": true,
+        "Homebrew": false,
+        "Description": "Adds the ash subdomain, a subdomain to the fire domain."
+      },
+      "Divine Subdomain": {
+        "Enabled": true,
+        "Homebrew": false,
+        "Description": "Adds the divine subdomain, a subdomain to the magic domain."
       }
     },
     "IsExpanded": false

@@ -72,6 +72,7 @@ namespace ExpandedContent.Tweaks.Deities {
                 bp.DisallowProphetOfPestilence();
                 bp.MagicDeceiverLock();
                 bp.DisallowNewMantisZealot();
+                bp.DisallowSoldierOfGaia();
                 bp.Groups = new FeatureGroup[] { FeatureGroup.Deities };
                 bp.AddComponent<PrerequisiteAlignment>(c => {
                     c.Alignment = AlignmentMaskType.LawfulGood | AlignmentMaskType.LawfulNeutral | AlignmentMaskType.TrueNeutral | AlignmentMaskType.LawfulEvil;
@@ -89,7 +90,10 @@ namespace ExpandedContent.Tweaks.Deities {
                     DeityTools.DomainAllowed.MagicDomainAllowed,
                     DeityTools.DomainAllowed.RuneDomainAllowed,
                     DeityTools.DomainAllowed.ArcaneDomainAllowed,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AirDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AnimalDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArtificeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CharmDomainAllowedSeparatist,
@@ -97,6 +101,7 @@ namespace ExpandedContent.Tweaks.Deities {
                     DeityTools.SeparatistDomainAllowed.DeathDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DestructionDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.LightningDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.EarthDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.EvilDomainAllowedSeparatist,//Evil
                     DeityTools.SeparatistDomainAllowed.FireDomainAllowedSeparatist,
@@ -104,6 +109,7 @@ namespace ExpandedContent.Tweaks.Deities {
                     DeityTools.SeparatistDomainAllowed.GoodDomainAllowedSeparatist,//Good
                     DeityTools.SeparatistDomainAllowed.HealingDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.IceDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.InsanityDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.LiberationDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.LuckDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.MadnessDomainAllowedSeparatist,

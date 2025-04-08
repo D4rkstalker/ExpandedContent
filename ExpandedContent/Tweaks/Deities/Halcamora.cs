@@ -67,6 +67,7 @@ namespace ExpandedContent.Tweaks.Deities {
                 bp.DisallowProphetOfPestilence();
                 bp.MagicDeceiverLock();
                 bp.DisallowNewMantisZealot();
+                bp.DisallowSoldierOfGaia();
                 bp.Groups = new FeatureGroup[] { FeatureGroup.Deities };
                 bp.AddComponent<PrerequisiteAlignment>(c => {
                     c.Alignment = AlignmentMaskType.LawfulGood | AlignmentMaskType.NeutralGood | AlignmentMaskType.ChaoticGood | AlignmentMaskType.TrueNeutral;
@@ -83,6 +84,10 @@ namespace ExpandedContent.Tweaks.Deities {
                     DeityTools.DomainAllowed.WeatherDomainAllowed,
                     DeityTools.DomainAllowed.AgathionDomainAllowed,
                     DeityTools.DomainAllowed.GrowthDomainAllowed,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.InsanityDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AirDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AnimalDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArtificeDomainAllowedSeparatist,
@@ -107,6 +112,7 @@ namespace ExpandedContent.Tweaks.Deities {
                     DeityTools.SeparatistDomainAllowed.MagicDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.NobilityDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ProtectionDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ReposeDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.RuneDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.StrengthDomainAllowedSeparatist,

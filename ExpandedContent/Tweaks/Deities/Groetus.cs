@@ -20,14 +20,20 @@ namespace ExpandedContent.Tweaks.Deities {
             GroetusFeature.SetDisallowedArchetype(DreadKnightClass, ClawOfTheFalseWyrmArchetype);
             GroetusFeature.SetDisallowedArchetype(InquistorClass, SwornOfTheEldestArchetype);
             GroetusFeature.DisallowDarkSister();
+            GroetusFeature.DisallowSoldierOfGaia();
             GroetusFeature.SetAllowedDomains(
                     DeityTools.DomainAllowed.StarsDomainAllowed,
+                    DeityTools.DomainAllowed.InsanityDomainAllowed,
+                    DeityTools.SeparatistDomainAllowed.AshDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.SmokeDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DivineDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.AgathionDomainAllowedSeparatist,//Good
                     DeityTools.SeparatistDomainAllowed.ArchonDomainGoodAllowedSeparatist,//Good
                     DeityTools.SeparatistDomainAllowed.BloodDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CavesDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.ArcaneDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.CurseDomainAllowedSeparatist,
+                    DeityTools.SeparatistDomainAllowed.DuelsDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DefenseDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.InsectDomainAllowedSeparatist,
                     DeityTools.SeparatistDomainAllowed.DemonDomainChaosAllowedSeparatist,//Chaos

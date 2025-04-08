@@ -48,7 +48,7 @@ namespace ExpandedContent.Tweaks.Spirits {
 
 
 
-            //Spelllist
+            #region Spelllist
             var ColorSpraySpell = Resources.GetBlueprintReference<BlueprintAbilityReference>("91da41b9793a4624797921f221db653c");
             var RainbowPatternSpell = Resources.GetBlueprintReference<BlueprintAbilityReference>("4b8265132f9c8174f87ce7fa6d0fe47b");
             var PrismaticSpraySpell = Resources.GetBlueprint<BlueprintAbility>("b22fd434bdb60fb4ba1068206402c4cf");
@@ -140,7 +140,9 @@ namespace ExpandedContent.Tweaks.Spirits {
                 bp.HideNotAvailibleInUI = false;
                 bp.IsClassFeature = true;                
             });
-            //Spirit Features
+            #endregion
+            #region Spirit Features
+            #region Base
             var ShamanHeavensSpiritBaseResource = Helpers.CreateBlueprint<BlueprintAbilityResource>("ShamanHeavensSpiritBaseResource", bp => {
                 bp.m_MaxAmount = new BlueprintAbilityResource.Amount {
                     BaseValue = 3,
@@ -273,6 +275,8 @@ namespace ExpandedContent.Tweaks.Spirits {
                 bp.m_AllowNonContextActions = false;                
                 bp.IsClassFeature = true;
             });
+            #endregion
+            #region Greater
             var ShamanHeavensSpiritGreaterFeature = Helpers.CreateBlueprint<BlueprintFeature>("ShamanHeavensSpiritGreaterFeature", bp => {
                 bp.SetName("Void Adaptation");
                 bp.SetDescription("The shaman gains cold resistance 15. In addition, every time you miss an attack roll because of {g|Encyclopedia:Concealment}concealment{/g}, " +
@@ -287,6 +291,8 @@ namespace ExpandedContent.Tweaks.Spirits {
                 bp.m_AllowNonContextActions = false;
                 bp.IsClassFeature = true;
             });
+            #endregion
+            #region True
             var ScintillatingPatternSpell = Resources.GetBlueprint<BlueprintAbility>("4dc60d08c6c4d3c47b413904e4de5ff0");
             var ShamanHeavensPrismaticSprayResource = Helpers.CreateBlueprint<BlueprintAbilityResource>("ShamanHeavensPrismaticSprayResource", bp => {
                 bp.m_MaxAmount = new BlueprintAbilityResource.Amount {
@@ -423,8 +429,8 @@ namespace ExpandedContent.Tweaks.Spirits {
                 bp.m_AllowNonContextActions = false;
                 bp.IsClassFeature = true;
             });
-
-            // Manifestation 
+            #endregion
+            #region Manifestation 
             var ShamanHeavensSpiritManifestationResource = Helpers.CreateBlueprint<BlueprintAbilityResource>("ShamanHeavensSpiritManifestationResource", bp => {
                 bp.m_MaxAmount = new BlueprintAbilityResource.Amount() {
                     BaseValue = 1,
@@ -485,9 +491,9 @@ namespace ExpandedContent.Tweaks.Spirits {
                 bp.HideInCharacterSheetAndLevelUp = false;
                 bp.IsClassFeature = true;
             });
-
-
-            //Progression
+            #endregion
+            #endregion
+            #region Progression
             var ShamanHeavensSpiritProgression = Helpers.CreateBlueprint<BlueprintProgression>("ShamanHeavensSpiritProgression", bp => {
                 bp.SetName("Heavens");
                 bp.SetDescription("A shaman who selects the heavens spirit has eyes that sparkle like starlight, exuding an aura of otherworldliness to those she is around. " +
@@ -519,11 +525,11 @@ namespace ExpandedContent.Tweaks.Spirits {
                 };
                 bp.GiveFeaturesForPreviousLevels = true;
             });
-            
+            #endregion
 
 
 
-            //Wandering Spirit
+            #region Wandering Spirit
             var ShamanHeavensSpiritWanderingTrueBuff = Helpers.CreateBuff("ShamanHeavensSpiritWanderingTrueBuff", bp => {
                 bp.SetName("");
                 bp.SetDescription("");
@@ -681,7 +687,8 @@ namespace ExpandedContent.Tweaks.Spirits {
                 bp.m_AllowNonContextActions = false;
                 bp.IsClassFeature = true;
             });
-            //Unsworn Wandering Spirit
+            #endregion
+            #region Unsworn Wandering Spirit
             var UnswornShamanHeavensSpiritWanderingFeature1 = Helpers.CreateBlueprint<BlueprintFeature>("UnswornShamanHeavensSpiritWanderingFeature1", bp => {
                 bp.SetName("Heavens");
                 bp.SetDescription("A shaman who selects the heavens spirit has eyes that sparkle like starlight, exuding an aura of otherworldliness to those she is around. " +
@@ -924,9 +931,10 @@ namespace ExpandedContent.Tweaks.Spirits {
                 bp.m_AllowNonContextActions = false;
                 bp.IsClassFeature = true;
             });
+            #endregion
 
-
-            //Guiding Star Hex
+            #region Hexes
+            #region Guiding Star Hex
             var GuidingStarIcon = AssetLoader.LoadInternal("Skills", "Icon_GuidingStar.png");
             var ShamanSpellbook = Resources.GetBlueprint<BlueprintSpellbook>("44f16931dabdff643bfe2a48138e769f");
             var ShamanHexGuidingStarSkillBuff = Helpers.CreateBuff("ShamanHexGuidingStarSkillBuff", bp => {
@@ -1270,7 +1278,8 @@ namespace ExpandedContent.Tweaks.Spirits {
                 bp.IsClassFeature = true;
             });            
             SpiritTools.RegisterShamanHex(ShamanHexGuidingStarFeature);
-            //Lure of the Heavens
+            #endregion
+            #region Lure of the Heavens
             var LureOfTheHeavensIcon = AssetLoader.LoadInternal("Skills", "Icon_LureOfTheHeavens.png");
             var ShamanHexLureOfTheHeavensResource = Helpers.CreateBlueprint<BlueprintAbilityResource>("ShamanHexLureOfTheHeavensResource", bp => {
                 bp.m_MaxAmount = new BlueprintAbilityResource.Amount {
@@ -1416,7 +1425,8 @@ namespace ExpandedContent.Tweaks.Spirits {
                 bp.IsClassFeature = true;
             });
             SpiritTools.RegisterShamanHex(ShamanHexLureOfTheHeavensFeature);
-            //Starburn
+            #endregion
+            #region Starburn
             var MageLightBuff = Resources.GetBlueprint<BlueprintBuff>("571baa4cf65bbcb4996fe429ca77d1a5");
             var ShamanHexStarburnResource = Helpers.CreateBlueprint<BlueprintAbilityResource>("ShamanHexStarburnResource", bp => {
                 bp.m_MaxAmount = new BlueprintAbilityResource.Amount {
@@ -1612,14 +1622,14 @@ namespace ExpandedContent.Tweaks.Spirits {
                 bp.IsClassFeature = true;
             });
             SpiritTools.RegisterShamanHex(ShamanHexStarburnFeature);
-
+            #endregion
 
             ShamanHeavensSpiritProgression.IsPrerequisiteFor = new List<BlueprintFeatureReference>() {
                 ShamanHexGuidingStarFeature.ToReference<BlueprintFeatureReference>(),
                 ShamanHexLureOfTheHeavensFeature.ToReference<BlueprintFeatureReference>(),
                 ShamanHexStarburnFeature.ToReference<BlueprintFeatureReference>()
             };
-
+            #endregion
 
 
             SpiritTools.RegisterSpirit(ShamanHeavensSpiritProgression);
